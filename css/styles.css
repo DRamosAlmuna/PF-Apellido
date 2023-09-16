@@ -158,6 +158,22 @@ header.btn-primary:hover {
   background-color: #fff;
 }
 
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10em 0;
+  font-weight: bold;
+}
+.error h1 {
+  font-size: 5em;
+}
+.error p {
+  font-size: 2em;
+}
+
 button.btn.google-provider {
   background-color: white;
   color: black;
@@ -251,7 +267,7 @@ input.btn {
     display: flex;
     justify-content: center;
   }
-  .intro__text h2 {
+  .intro__text h1 {
     font-size: 37px;
     margin-bottom: 10px;
   }
@@ -277,7 +293,7 @@ input.btn {
     font-size: 25px;
     padding: 10px 0 0 0px;
   }
-  .proce__text h2 {
+  .proce__text h1 {
     font-size: 40px;
     margin-bottom: 30px;
   }
@@ -351,7 +367,7 @@ input.btn {
     display: flex;
     justify-content: center;
   }
-  .intro__text h2 {
+  .intro__text h1 {
     font-size: 45px;
     margin-bottom: 15px;
   }
@@ -380,7 +396,7 @@ input.btn {
     font-size: 20px;
     padding: 0 40px;
   }
-  .proce__text h2 {
+  .proce__text h1 {
     font-size: 40px;
     margin-bottom: 30px;
   }
