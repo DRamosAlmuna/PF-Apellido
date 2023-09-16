@@ -1,0 +1,540 @@
+$fondo: #0a1925;
+$subfondo:  #082032;
+$boton: #183042;
+$hover-boton: #051b27;
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: $fondo;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
+
+header{
+    position: relative;
+    order: -1;
+        div{
+            margin-top: 10px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &.btn-primary {
+            background-color: $boton;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+                &:hover{
+                    background-color: $hover-boton;
+                }
+        }
+}
+
+.scrollable-area{
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+.intro{
+
+    img{
+        margin-top: 10px;
+    }
+    
+    &__text{
+        text-align: center;
+    }
+}
+
+.proce img{
+    margin-top: 10px;
+}
+
+#ofertas{
+    text-align: center;
+}
+
+.imglogo img{
+    width: 60px;
+    height: 60px;
+}
+
+.imgcuenta img{
+    width: 40px;
+    height: 40px;
+}
+
+.imagemp{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10%;
+}
+
+.card{
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 10%;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: $subfondo;
+    transition: transform 0.3s ease-out;
+        &:hover{
+            transform: translateY(-10px)
+        }
+}
+
+.fondos{
+    background-color: $subfondo;
+    justify-content: center;
+    color: #fff;
+    display: flex;
+    padding: 0;
+    margin: 10px;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.btm-custom-color{
+    background-color: $subfondo;
+    color: #fff;
+        &:hover{
+            background-color: $hover-boton;
+        }
+}
+
+.facebook-logo{
+    width: 30px;
+    height: 30px;
+    background-color: #1877f2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.contacto{
+    img{
+        margin-top: 2%;
+        margin-bottom: 2%;
+        display: flex;
+    }
+}
+
+.micuenta {
+    img {
+        margin-top: -40px;
+        margin-bottom: -20px;
+        display: block;
+        margin-left: 5px;
+    }
+}
+    
+.contacto__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: $subfondo;
+    border-radius: 10px;
+    padding: 20px 10px 20px 10px;
+    margin-bottom: 35px;
+
+        button, input{
+            margin-top: 10px;
+            background-color: $boton;
+            color: #fff; 
+            border: none;
+            padding: 10px 20px; 
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: $hover-boton;
+        }
+
+        input{
+            background-color: #fff;
+        }
+}
+
+
+
+button.btn{
+
+    &.google-provider {
+        background-color: white;
+        color: black;
+        border: solid 1px #ccc;
+            &:hover{
+                background-color: rgb(212, 212, 212);
+                color: black;
+            }
+      }
+
+    &.facebook-provider {
+      background-color: rgb(10, 82, 216);
+      color: white;
+      border: 0;
+
+        &:hover{
+            background-color: rgb(6, 61, 163);
+            color: white;
+        }
+    }
+
+    &.twitter-provider {
+      background-color: rgb(10, 168, 216);
+      color: white;
+      border: 0;
+
+        &:hover{
+            background-color: rgb(7, 133, 172);
+            color: white;
+        }
+    }
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+        div{
+            margin-top: 5px;
+        }
+}
+
+.providers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+input.btn {
+    border: none;
+    padding: 15px 0;
+    font-weight: bolder;
+    display: block;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .contacto__form{
+
+    input[type="submit"] {
+        background-color: $boton;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 0 auto;
+        margin-top: 20px;
+
+            &:hover {
+                background-color: $hover-boton;
+            }
+    }
+}
+
+//estoy provbando esto
+
+@media (min-width: 767px) and (max-width: 1024px){
+
+    .imglogo img {
+        width: 90px;
+        height: 75px;
+    }
+    
+    .imgcuenta img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .card {
+        width: 300px;
+        height: 250px;
+    }
+    
+    .fondos {
+        margin: 20px;
+        padding: 15px;
+
+            h2{
+                font-size: 30px;
+            }
+    }
+
+    .intro{
+        display: flex;
+        justify-content: center;
+
+        &__text{
+
+            h2{
+                font-size: 37px;
+                margin-bottom: 10px;
+            }
+
+            p{
+                font-size: 25px;
+            }
+        }
+    }
+
+    .intro img{
+        margin: 15px 0 10px 0;
+        width: 650px;
+        height: 405px;
+    }
+
+    .proce{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+            img{
+                padding: 15px 0 0 10px;
+                width: 650px;        
+            }
+
+            &__text{
+                font-size: 25px;
+                padding: 10px 0 0 0px;
+
+                h2{
+                    font-size: 40px;
+                    margin-bottom: 30px;
+                }
+            }
+    }
+
+    footer{
+        padding-top: 40px;
+        display: block;
+    }
+
+    .contacto{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+            img{
+                padding-top: 40px;
+                height: 320px;
+                width: auto;
+            }
+
+            &__form{
+                max-width: 800px;
+                margin: 0 auto;
+                font-size: 25px;
+                padding: 35px;
+                margin-bottom: 20px;
+            }
+    }
+
+    .micuenta{
+        &__contorno{
+            order: 1;
+        }
+
+        img{
+            width: 400px;
+            height: auto;
+            padding: 0;
+            margin-top: -3rem;
+        }
+    }
+
+    .btn-group li{
+        font-size: 22px;
+    }
+    
+    .form-group label {
+        font-size: 24px;
+    }
+    
+    .form-control {
+        font-size: 22px;
+    }
+    
+    input[type="submit"] {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .imglogo img {
+      width: 90px;
+      height: 75px;
+    }
+  
+    .imgcuenta img {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .card {
+      width: 300px;
+      height: 250px;
+    }
+  
+    .fondos {
+      margin: 20px;
+      padding: 15px;
+  
+      h2 {
+        font-size: 35px;
+      }
+    }
+  
+    .intro {
+      display: flex;
+      justify-content: center;
+  
+      &__text {
+        h2 {
+          font-size: 45px;
+          margin-bottom: 15px;
+        }
+  
+        p {
+          font-size: 27px;
+        }
+      }
+  
+      img {
+        margin: 15px;
+        width: 1100px;
+        height: 400px;
+        border-radius: 10%;
+      }
+    }
+  
+    .proce {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      margin-bottom: 10px;
+      justify-content: center;
+      align-items: center;
+  
+      img {
+        padding-left: 10px;
+        width: 1000px;
+      }
+  
+      &__text {
+        p {
+          font-size: 20px;
+          padding: 0 40px;
+        }
+  
+        h2 {
+          font-size: 40px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  
+    footer {
+        clear: both;
+        padding-top: 40px;
+        display: block;
+      }
+  
+    .contacto {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      margin-top: 70px;
+      justify-content: center;
+      align-items: center;
+      margin-left: 0.5rem;
+  
+      img {
+        margin-left: -5rem;
+      }
+  
+      &__form {
+        order: -1;
+        max-width: 500px;
+        font-size: 20px;
+        padding: 35px;
+        margin-bottom: 20px;
+      }
+  
+      &__img {
+        display: flex;
+  
+        img {
+          width: 750px;
+          height: auto;
+          margin-left: -11rem;
+        }
+      }
+    }
+  
+    .micuenta {
+      justify-content: center;
+      align-items: center;
+  
+      img {
+        width: 600px;
+        height: auto;
+        margin-left: 50px;
+        margin-top: -25rem;
+      }
+  
+      &__contorno {
+        order: -1;
+      }
+    }
+  
+    .form-group label {
+      font-size: 22px;
+    }
+  
+    .form-control {
+      font-size: 18px;
+    }
+  
+    input[type="submit"] {
+      font-size: 18px;
+    }
+  
+    .btn-group li {
+      font-size: 20px;
+    }
+
+    body{
+        flex-direction: column;
+    }
+  }
